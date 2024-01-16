@@ -3,8 +3,67 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Mulish", sans-serif;
 }
+
+.sec-deals {
+    padding: 60px 0px;
+    height: 100%;
+
+}
+
+.ham{
+    display: none;
+}
+
+.inner {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.deal-inner {
+    height: 450px;
+    background-image: url("/images/deals-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 55px;
+
+
+}
+
+.blank {
+    width: 45%;
+}
+
+.text-box{
+    width: 55%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.58);
+    backdrop-filter: blur(5px);
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
 /* Nav Styles */
 nav {
     max-width: 1250px;
@@ -39,26 +98,322 @@ nav {
     gap: 44px;
 }
 
-.nav-right a {
-    text-decoration: none;
-}
-
-.nav-right .menu-home {
-    color: red;
-    text-align: center;
+.nav-right span a {
+    color: #FF5400;
     font-size: 18px;
     font-weight: 700;
 }
 
+
 .nav-right a {
-    color: var(--Dark-02, #424247);
+    text-decoration: none;
+    color: #424247;
     text-align: center;
     font-family: Mulish;
     font-size: 18px;
     font-weight: 400;
 }
+
 /* Banner Styles Here */
-.banner-container{
+.banner-container {
     max-width: 1250px;
     margin: 0 auto;
+    margin-top: 50px;
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    border-radius: 12px;
+}
+
+input {}
+
+.banner-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* Tour Styles Here */
+.tour-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.text-container ul {
+    padding-left: 30px;
+}
+
+.tour-img-container {
+    border-radius: 16px;
+}
+
+.tour-img-container img {
+    height: 100%;
+}
+
+.common-button {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+    width: 174px;
+    height: 52px;
+}
+
+/* Destination Styles Here */
+.destination-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.dest-text-container {
+    max-width: 40%;
+    text-align: center;
+}
+
+.dest-image-container {
+    display: grid;
+    gap: 24px;
+    grid-template-areas:
+        "maldives maldives maldives indonesia indonesia indonesia"
+        "srilanka srilanka north-america north-america kashmir kashmir"
+        "bangladesh bangladesh bangladesh bandarban bandarban bandarban"
+    ;
+
+}
+
+.dest-image-container img {
+    width: 100%;
+    height: 300px;
+}
+
+.dest-image-container .maldives {
+    grid-area: maldives;
+}
+
+.dest-image-container .indonesia {
+    grid-area: indonesia;
+}
+
+.dest-image-container .srilanka {
+    grid-area: srilanka;
+}
+
+.dest-image-container .north-america {
+    grid-area: north-america;
+}
+
+.dest-image-container .kashmir {
+    grid-area: kashmir;
+}
+
+.dest-image-container .bangladesh {
+    grid-area: bangladesh;
+}
+
+.dest-image-container .bandarban {
+    grid-area: bandarban;
+}
+
+/* Why Choose Us Styles */
+
+.why-choose-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.text-container h1 {
+    color: #131318;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.text-container p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.card-container {
+    padding-top: 24px;
+    gap: 24px;
+    width: 100%;
+    display: flex;
+
+}
+
+.card-1 {
+    width: 100%;
+    height: 248px;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+
+
+}
+
+.card-2 {
+    width: 100%;
+    height: 248px;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+
+
+}
+
+.card-3 {
+    width: 50%;
+    height: 248px;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+
+    margin: 0px auto;
+
+}
+
+/* Simple Perfect Section Styles */
+.simple-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.simple-inner {
+    display: flex;
+    width: 100%;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.simple-media-container {
+    width: 50%;
+}
+
+/* Newsletter Styles Start Here */
+.newsletter-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter-container .text-container {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 30px;
+}
+
+.text-container h1 {
+    text-align: left;
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.image-container {
+    position: relative;
+    
+}
+
+.discount-orange {
+    width: 324px;
+    height: 120px;
+    color: white;
+    position: absolute;
+    right: 15px;
+    bottom: 80px;
+    border-radius: 16px;
+    padding: 30px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+}
+
+.discount-orange p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.discount-orange h1 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+/* Footer Styles */
+.footer-container {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-logo {
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo h2 {
+    color: #131318;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footer-logo .orange {
+    color: #FF5400;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.footer-container p {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+    padding-bottom: 50px;
+    padding-top: 33px;
+}
+
+.footer-container p {
+    padding-top: 50px;
+    padding-bottom: 110px;
 }
