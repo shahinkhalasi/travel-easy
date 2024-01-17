@@ -7,61 +7,10 @@
     font-family: "Mulish", sans-serif;
 }
 
-.sec-deals {
-    padding: 60px 0px;
-    height: 100%;
 
-}
 
-.ham{
+.ham {
     display: none;
-}
-
-.inner {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-.deal-inner {
-    height: 450px;
-    background-image: url("/images/deals-1.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    padding: 55px;
-
-
-}
-
-.blank {
-    width: 45%;
-}
-
-.text-box{
-    width: 55%;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.58);
-    backdrop-filter: blur(5px);
-    padding: 55px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 5px;
 }
 
 /* Nav Styles */
@@ -129,7 +78,38 @@ nav {
     border-radius: 12px;
 }
 
-input {}
+.op-txt {
+    color: rgba(19, 19, 24, 0.50);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    background: #FFF;
+    width: 174px;
+    height: 52px;
+}
+
+.opt-btn {
+    border-radius: 8px;
+    border: none;
+    background: #FF5400;
+    width: 174px;
+    height: 52px;
+}
+
+.opt-btn a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.magnify {
+    color: #FFF;
+}
+
 
 .banner-image img {
     height: 100%;
@@ -298,6 +278,103 @@ input {}
 
 }
 
+.inner,
+.text-deals {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.sec-deals {
+    padding: 60px 0px;
+    height: 100%;
+}
+
+.deal-inner {
+    height: 450px;
+    background-image: url("/images/deals-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 55px;
+}
+
+.deal-inner-2 {
+    height: 450px;
+    background-image: url("/images/deals-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 55px;
+}
+
+.blank {
+    width: 45%;
+}
+
+.text-box {
+    width: 55%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.58);
+    backdrop-filter: blur(5px);
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text-box button {
+    border-radius: 8px;
+    border: none;
+    background: #FF5400;
+    width: 150px;
+    height: 52px;
+}
+
+.text-box button a {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.all-packages {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 20px;
+}
+
 /* Simple Perfect Section Styles */
 .simple-container {
     max-width: 1250px;
@@ -344,7 +421,7 @@ input {}
 
 .image-container {
     position: relative;
-    
+
 }
 
 .discount-orange {
