@@ -102,12 +102,14 @@ nav {
 }
 
 .opt-container {
+    display: flex;
     gap: 24px;
     border-radius: 8px;
-    background-image;: linear-gradient(#e5e4e2)
+    padding: 10px;
+    background-color: #e5e4e289;
 }
 
-.op-txt {
+.opt-txt {
     color: rgba(19, 19, 24, 0.50);
     text-align: center;
     font-size: 16px;
@@ -264,32 +266,33 @@ nav {
     max-width: 1250px;
     margin: 0 auto;
     margin-top: 100px;
-    border: 2px solid red;
 }
 
 
-.why-choose-container .text-container {
+.why-text-container {
     text-align: center;
-    border: 2px solid blue;
 }
 
-.text-container h1 {
+.why-text-container h1 {
     color: #131318;
     text-align: center;
     font-size: 40px;
     font-weight: 800;
+    padding-bottom: 24px;
 }
 
-.text-container p {
+.why-text-container p {
     color: rgba(19, 19, 24, 0.70);
     text-align: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    padding-bottom: 48px;
 }
 
 .card-container {
     padding-top: 24px;
+    padding-bottom: 24px;
     gap: 24px;
     width: 100%;
     display: flex;
@@ -494,6 +497,18 @@ nav {
     border: 1px solid #FF5400;
     padding: 30px;
 }
+.news-items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sub-in{
+    margin-top: 10px;
+    width: 100% !important;
+    border: 1px solid red;
+}
 
 .text-container h1 {
     text-align: left;
@@ -566,8 +581,8 @@ nav {
     max-width: 1250px;
     margin: 0 auto;
     text-align: center;
-    padding: 50px;
-    background-color: #f8f8f8;
+    padding: 50px 0;
+    
 }
 
 .featured-section h2 {
@@ -654,6 +669,8 @@ nav {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
 
 .footer-icon-container {
@@ -666,7 +683,3 @@ nav {
     padding-top: 33px;
 }
 
-.footer-container p {
-    padding-top: 50px;
-    padding-bottom: 110px;
-}
